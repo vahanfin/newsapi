@@ -33,6 +33,11 @@ const scrapeNews = async () => {
   }
 };
 
+app.get('/', (req, res)=>{ 
+  res.status(200); 
+  res.send("Welcome to root URL of Server"); 
+});
+
 // API endpoint to fetch news articles
 app.get('/rto-news', async (req, res) => {
   try {
